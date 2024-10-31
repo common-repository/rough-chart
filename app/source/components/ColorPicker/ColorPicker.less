@@ -1,0 +1,24 @@
+.color-picker-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.color-picker-display {
+    display: inline-block;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    vertical-align: inherit;
+    cursor: pointer;
+}
+    .color-picker-display_disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+.color-picker-popup-container {
+    position: relative;
+    display: inline-block;
+    // Adding huge `z-index` in order to be on top of jExcel table
+    z-index: 10000;
+}
